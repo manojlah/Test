@@ -1,0 +1,31 @@
+Country,Medal,Count,continent,cn,prop
+Australia,Gold,14,Oceania,,0.29787234
+Australia,Silver,16,Oceania,Oceania,0.340425532
+Australia,Bronze,17,Oceania,,0.361702128
+China,Gold,51,Asia,,0.51
+China,Silver,21,Asia,Asia,0.21
+China,Bronze,28,Asia,,0.28
+France,Gold,7,Europe,,0.170731707
+France,Silver,16,Europe,Europe,0.390243902
+France,Bronze,18,Europe,,0.43902439
+Germany,Gold,16,Europe,,0.390243902
+Germany,Silver,10,Europe,Europe,0.243902439
+Germany,Bronze,15,Europe,,0.365853659
+Italy,Gold,8,Europe,,0.296296296
+Italy,Silver,9,Europe,Europe,0.333333333
+Italy,Bronze,10,Europe,,0.37037037
+Russia,Gold,21,Europe,,0.304347826
+Russia,Silver,20,Europe,Europe,0.289855072
+Russia,Bronze,28,Europe,,0.405797101
+South Korea,Gold,14,Asia,,0.4375
+South Korea,Silver,10,Asia,Asia,0.3125
+South Korea,Bronze,8,Asia,,0.25
+Ukraine,Gold,7,Europe,,0.259259259
+Ukraine,Silver,5,Europe,Europe,0.185185185
+Ukraine,Bronze,15,Europe,,0.555555556
+United Kingdom,Gold,19,Europe,,0.395833333
+United Kingdom,Silver,13,Europe,Europe,0.270833333
+United Kingdom,Bronze,16,Europe,,0.333333333
+United States,Gold,37,North America,,0.333333333
+United States,Silver,38,North America,North America,0.342342342
+United States,Bronze,36,North America,,0.324324324
