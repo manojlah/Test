@@ -1,0 +1,378 @@
+"Country","Sport","Count"
+"Afghanistan","Taekwondo",1
+"Algeria","Judo",2
+"Argentina","Basketball",1
+"Argentina","Cycling",1
+"Argentina","Football",1
+"Argentina","Hockey",1
+"Argentina","Judo",1
+"Argentina","Sailing",1
+"Armenia","Boxing",1
+"Armenia","Weightlifting",3
+"Armenia","Wrestling",2
+"Australia","Aquatics",23
+"Australia","Athletics",4
+"Australia","Basketball",1
+"Australia","Canoe / Kayak",5
+"Australia","Cycling",1
+"Australia","Equestrian",2
+"Australia","Hockey",1
+"Australia","Rowing",3
+"Australia","Sailing",3
+"Australia","Shooting",1
+"Australia","Softball",1
+"Australia","Triathlon",2
+"Austria","Aquatics",1
+"Austria","Canoe / Kayak",1
+"Austria","Judo",1
+"Azerbaijan","Boxing",1
+"Azerbaijan","Judo",2
+"Azerbaijan","Wrestling",4
+"Bahamas","Athletics",2
+"Belarus","Athletics",7
+"Belarus","Canoe / Kayak",3
+"Belarus","Gymnastics",2
+"Belarus","Rowing",2
+"Belarus","Weightlifting",3
+"Belarus","Wrestling",2
+"Belgium","Athletics",2
+"Brazil","Aquatics",2
+"Brazil","Athletics",1
+"Brazil","Football",2
+"Brazil","Judo",3
+"Brazil","Sailing",2
+"Brazil","Taekwondo",1
+"Brazil","Volleyball",4
+"Bulgaria","Rowing",1
+"Bulgaria","Wrestling",3
+"Cameroon","Athletics",1
+"Canada","Aquatics",3
+"Canada","Athletics",1
+"Canada","Canoe / Kayak",2
+"Canada","Equestrian",3
+"Canada","Gymnastics",2
+"Canada","Rowing",4
+"Canada","Taekwondo",1
+"Canada","Triathlon",1
+"Canada","Wrestling",2
+"Chile","Tennis",1
+"China","Aquatics",18
+"China","Archery",3
+"China","Athletics",2
+"China","Badminton",8
+"China","Boxing",4
+"China","Canoe / Kayak",1
+"China","Cycling",1
+"China","Fencing",2
+"China","Gymnastics",18
+"China","Hockey",1
+"China","Judo",4
+"China","Rowing",2
+"China","Sailing",2
+"China","Shooting",8
+"China","Table Tennis",8
+"China","Taekwondo",2
+"China","Tennis",1
+"China","Volleyball",3
+"China","Weightlifting",9
+"China","Wrestling",3
+"Colombia","Weightlifting",1
+"Colombia","Wrestling",1
+"Croatia","Athletics",1
+"Croatia","Gymnastics",1
+"Croatia","Shooting",1
+"Croatia","Taekwondo",2
+"Cuba","Athletics",5
+"Cuba","Baseball",1
+"Cuba","Boxing",8
+"Cuba","Cycling",1
+"Cuba","Judo",6
+"Cuba","Shooting",1
+"Cuba","Taekwondo",1
+"Cuba","Wrestling",1
+"Czech Republic","Athletics",1
+"Czech Republic","Canoe / Kayak",1
+"Czech Republic","Rowing",1
+"Czech Republic","Shooting",3
+"Denmark","Aquatics",1
+"Denmark","Canoe / Kayak",1
+"Denmark","Cycling",1
+"Denmark","Equestrian",2
+"Denmark","Rowing",2
+"Denmark","Sailing",1
+"Dominican Republic","Boxing",1
+"Dominican Republic","Taekwondo",1
+"Ecuador","Athletics",1
+"Egypt","Judo",1
+"Estonia","Athletics",1
+"Estonia","Rowing",1
+"Ethiopia","Athletics",7
+"Finland","Athletics",1
+"Finland","Rowing",1
+"Finland","Shooting",2
+"France","Aquatics",6
+"France","Archery",1
+"France","Athletics",2
+"France","Boxing",3
+"France","Canoe / Kayak",2
+"France","Cycling",6
+"France","Fencing",4
+"France","Gymnastics",2
+"France","Handball",1
+"France","Judo",4
+"France","Rowing",2
+"France","Sailing",3
+"France","Shooting",1
+"France","Taekwondo",1
+"France","Weightlifting",1
+"France","Wrestling",2
+"Georgia","Judo",1
+"Georgia","Shooting",1
+"Georgia","Wrestling",4
+"Germany","Aquatics",5
+"Germany","Athletics",1
+"Germany","Canoe / Kayak",8
+"Germany","Cycling",3
+"Germany","Equestrian",5
+"Germany","Fencing",2
+"Germany","Football",1
+"Germany","Gymnastics",2
+"Germany","Hockey",1
+"Germany","Judo",1
+"Germany","Modern Pentathlon",1
+"Germany","Rowing",2
+"Germany","Sailing",1
+"Germany","Shooting",4
+"Germany","Table Tennis",1
+"Germany","Triathlon",1
+"Germany","Weightlifting",1
+"Germany","Wrestling",1
+"Greece","Athletics",1
+"Greece","Rowing",1
+"Greece","Sailing",1
+"Greece","Taekwondo",1
+"Hungary","Aquatics",4
+"Hungary","Canoe / Kayak",4
+"Hungary","Fencing",1
+"Hungary","Wrestling",1
+"Iceland","Handball",1
+"India","Boxing",1
+"India","Shooting",1
+"India","Wrestling",1
+"Indonesia","Badminton",4
+"Indonesia","Weightlifting",2
+"Iran","Taekwondo",1
+"Iran","Wrestling",1
+"Ireland","Boxing",3
+"Israel","Sailing",1
+"Italy","Aquatics",2
+"Italy","Archery",1
+"Italy","Athletics",2
+"Italy","Boxing",3
+"Italy","Canoe / Kayak",2
+"Italy","Cycling",1
+"Italy","Fencing",7
+"Italy","Judo",1
+"Italy","Rowing",1
+"Italy","Sailing",2
+"Italy","Shooting",3
+"Italy","Taekwondo",1
+"Italy","Wrestling",1
+"Jamaica","Athletics",10
+"Japan","Aquatics",6
+"Japan","Athletics",1
+"Japan","Cycling",1
+"Japan","Fencing",1
+"Japan","Gymnastics",2
+"Japan","Judo",7
+"Japan","Softball",1
+"Japan","Wrestling",6
+"Kazakhstan","Boxing",2
+"Kazakhstan","Judo",1
+"Kazakhstan","Taekwondo",1
+"Kazakhstan","Weightlifting",4
+"Kazakhstan","Wrestling",5
+"Kenya","Athletics",14
+"Kyrgyzstan","Wrestling",2
+"Latvia","Athletics",1
+"Latvia","Cycling",1
+"Latvia","Weightlifting",1
+"Lithuania","Athletics",1
+"Lithuania","Modern Pentathlon",2
+"Lithuania","Sailing",1
+"Lithuania","Wrestling",1
+"Malaysia","Badminton",1
+"Mauritius","Boxing",1
+"Mexico","Aquatics",1
+"Mexico","Taekwondo",2
+"Moldova","Boxing",1
+"Mongolia","Boxing",2
+"Mongolia","Judo",1
+"Mongolia","Shooting",1
+"Morocco","Athletics",2
+"Netherlands","Aquatics",3
+"Netherlands","Cycling",1
+"Netherlands","Equestrian",3
+"Netherlands","Hockey",1
+"Netherlands","Judo",5
+"Netherlands","Rowing",2
+"Netherlands","Sailing",2
+"New Zealand","Athletics",2
+"New Zealand","Cycling",2
+"New Zealand","Rowing",3
+"New Zealand","Sailing",1
+"New Zealand","Triathlon",1
+"Nigeria","Athletics",2
+"Nigeria","Football",1
+"Nigeria","Taekwondo",1
+"North Korea","Gymnastics",1
+"North Korea","Judo",3
+"North Korea","Weightlifting",2
+"Norway","Aquatics",2
+"Norway","Athletics",2
+"Norway","Canoe / Kayak",1
+"Norway","Handball",1
+"Norway","Rowing",1
+"Norway","Shooting",1
+"Norway","Taekwondo",1
+"Panama","Athletics",1
+"Poland","Athletics",2
+"Poland","Canoe / Kayak",1
+"Poland","Cycling",1
+"Poland","Fencing",1
+"Poland","Gymnastics",1
+"Poland","Rowing",2
+"Poland","Weightlifting",1
+"Poland","Wrestling",1
+"Portugal","Athletics",1
+"Portugal","Triathlon",1
+"Romania","Athletics",1
+"Romania","Fencing",2
+"Romania","Gymnastics",2
+"Romania","Judo",1
+"Romania","Rowing",2
+"Russia","Aquatics",11
+"Russia","Archery",1
+"Russia","Athletics",18
+"Russia","Basketball",1
+"Russia","Boxing",3
+"Russia","Canoe / Kayak",3
+"Russia","Cycling",2
+"Russia","Fencing",1
+"Russia","Gymnastics",4
+"Russia","Handball",1
+"Russia","Modern Pentathlon",1
+"Russia","Shooting",4
+"Russia","Tennis",3
+"Russia","Volleyball",1
+"Russia","Weightlifting",7
+"Russia","Wrestling",8
+"Serbia","Aquatics",2
+"Serbia","Tennis",1
+"Singapore","Table Tennis",1
+"Slovakia","Canoe / Kayak",4
+"Slovakia","Shooting",1
+"Slovakia","Wrestling",1
+"Slovenia","Aquatics",1
+"Slovenia","Athletics",1
+"Slovenia","Judo",1
+"Slovenia","Sailing",1
+"Slovenia","Shooting",1
+"South Africa","Athletics",1
+"South Korea","Aquatics",2
+"South Korea","Archery",5
+"South Korea","Badminton",4
+"South Korea","Baseball",1
+"South Korea","Boxing",1
+"South Korea","Fencing",1
+"South Korea","Gymnastics",1
+"South Korea","Handball",1
+"South Korea","Judo",4
+"South Korea","Shooting",2
+"South Korea","Table Tennis",2
+"South Korea","Taekwondo",4
+"South Korea","Weightlifting",3
+"South Korea","Wrestling",1
+"Spain","Aquatics",2
+"Spain","Basketball",1
+"Spain","Canoe / Kayak",3
+"Spain","Cycling",4
+"Spain","Fencing",1
+"Spain","Gymnastics",1
+"Spain","Handball",1
+"Spain","Hockey",1
+"Spain","Sailing",2
+"Spain","Tennis",2
+"Sudan","Athletics",1
+"Sweden","Cycling",2
+"Sweden","Equestrian",1
+"Sweden","Sailing",1
+"Sweden","Tennis",1
+"Switzerland","Cycling",4
+"Switzerland","Equestrian",2
+"Switzerland","Judo",1
+"Switzerland","Tennis",1
+"Taiwan","Taekwondo",2
+"Taiwan","Weightlifting",2
+"Tajikistan","Judo",1
+"Tajikistan","Wrestling",1
+"Thailand","Boxing",2
+"Thailand","Taekwondo",1
+"Thailand","Weightlifting",1
+"Togo","Canoe / Kayak",1
+"Trinidad and Tobago","Athletics",2
+"Tunisia","Aquatics",1
+"Turkey","Athletics",2
+"Turkey","Boxing",1
+"Turkey","Taekwondo",2
+"Turkey","Weightlifting",1
+"Turkey","Wrestling",2
+"Ukraine","Aquatics",1
+"Ukraine","Archery",1
+"Ukraine","Athletics",5
+"Ukraine","Boxing",2
+"Ukraine","Canoe / Kayak",2
+"Ukraine","Cycling",1
+"Ukraine","Fencing",1
+"Ukraine","Gymnastics",2
+"Ukraine","Judo",1
+"Ukraine","Modern Pentathlon",1
+"Ukraine","Shooting",3
+"Ukraine","Weightlifting",2
+"Ukraine","Wrestling",5
+"United Kingdom","Aquatics",6
+"United Kingdom","Athletics",4
+"United Kingdom","Boxing",3
+"United Kingdom","Canoe / Kayak",3
+"United Kingdom","Cycling",14
+"United Kingdom","Equestrian",3
+"United Kingdom","Gymnastics",1
+"United Kingdom","Modern Pentathlon",1
+"United Kingdom","Rowing",6
+"United Kingdom","Sailing",6
+"United Kingdom","Taekwondo",1
+"United States","Aquatics",33
+"United States","Athletics",23
+"United States","Baseball",1
+"United States","Basketball",2
+"United States","Boxing",1
+"United States","Cycling",5
+"United States","Equestrian",4
+"United States","Fencing",6
+"United States","Football",1
+"United States","Gymnastics",10
+"United States","Judo",1
+"United States","Rowing",3
+"United States","Sailing",2
+"United States","Shooting",6
+"United States","Softball",1
+"United States","Taekwondo",3
+"United States","Tennis",2
+"United States","Volleyball",4
+"United States","Wrestling",3
+"Uzbekistan","Gymnastics",2
+"Uzbekistan","Judo",2
+"Uzbekistan","Wrestling",2
+"Venezuela","Taekwondo",1
+"Vietnam","Weightlifting",1
+"Zimbabwe","Aquatics",4
