@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 700,
-  "height": 375,
+  "width": 550,
+  "height": 300,
   "background": "beige",
   "title": "No. of Gold Medals won by European countries",
   "projection": {"type": "equalEarth"},
