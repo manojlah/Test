@@ -9,8 +9,8 @@
   "mark": "rect",
   "autosize": "fit",
   "encoding": {
-    "x": {"field": "Country", "type": "nominal"},
-    "y": {"field": "Sport", "type": "nominal"},
+    "x": {"field": "Sport", "type": "nominal"},
+    "y": {"field": "Country", "type": "nominal"},
     "color": {
       "field": "Count",
       "type": "quantitative",
