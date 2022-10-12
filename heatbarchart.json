@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 600,
+  "width": 800,
+  "data": {
+    "url": "https://raw.githubusercontent.com/manojlah/Test/main/heatmapdata.csv"
+  },
+  "mark": "rect",
+  "autosize": "fit",
+  "encoding": {
+    "x": {"field": "Country", "type": "nominal"},
+    "y": {"field": "Sport", "type": "nominal"},
+    "color": {
+      "field": "Count",
+      "type": "quantitative",
+      "scale": {"range": "heatmap"}
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "Sport", "type": "nominal"},
+      {"field": "Count", "type": "quantitative", "title": "No. of Medals"}
+    ]
+  },
+  "config": {}
+}
