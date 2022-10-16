@@ -1,0 +1,221 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple radial chart with embedded data.",
+  "height": 350,
+  "width": 500,
+  "background": "beige",
+  "data": {
+    "url": "https://raw.githubusercontent.com/manojlah/Test/main/chndat.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 40, "stroke": "white"},
+      "params": [
+        {"name": "select", "select": {"type": "point", "on": "mouseover"}}
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 15,
+        "thetaOffset": 14,
+        "xOffset": 6,
+        "yOffset": 5
+      },
+      "transform": [{"filter": "datum.Sport == 'Badminton'"}],
+      "encoding": {"text": {"field": "Count", "type": "quantitative"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 35,
+        "thetaOffset": 13.9,
+        "xOffset": 6,
+        "yOffset": 5,
+        "fontWeight": "bold"
+      },
+      "transform": [{"filter": "datum.Sport == 'Badminton'"}],
+      "encoding": {"text": {"field": "Sport"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 15,
+        "thetaOffset": 10.5,
+        "xOffset": 11,
+        "yOffset": 5
+      },
+      "transform": [{"filter": "datum.Sport == 'Shooting'"}],
+      "encoding": {"text": {"field": "Count", "type": "quantitative"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 35,
+        "thetaOffset": 10.6,
+        "xOffset": 6,
+        "yOffset": 5,
+        "fontWeight": "bold"
+      },
+      "transform": [{"filter": "datum.Sport == 'Shooting'"}],
+      "encoding": {"text": {"field": "Sport"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 10,
+        "thetaOffset": 14.6,
+        "xOffset": 4.5,
+        "yOffset": 5
+      },
+      "transform": [{"filter": "datum.Sport == 'Gymnastics'"}],
+      "encoding": {"text": {"field": "Count", "type": "quantitative"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 35,
+        "thetaOffset": 14.6,
+        "xOffset": 30.5,
+        "yOffset": -25,
+        "fontWeight": "bold"
+      },
+      "transform": [{"filter": "datum.Sport == 'Gymnastics'"}],
+      "encoding": {"text": {"field": "Sport"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 19,
+        "thetaOffset": -20.5,
+        "xOffset": 12.5,
+        "yOffset": 3
+      },
+      "transform": [{"filter": "datum.Sport == 'Table Tennis'"}],
+      "encoding": {"text": {"field": "Count", "type": "quantitative"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 35,
+        "thetaOffset": -20.5,
+        "xOffset": 2.5,
+        "yOffset": -7,
+        "fontWeight": "bold"
+      },
+      "transform": [{"filter": "datum.Sport == 'Table Tennis'"}],
+      "encoding": {"text": {"field": "Sport"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 15,
+        "thetaOffset": -19.7,
+        "xOffset": 12.5,
+        "yOffset": 3
+      },
+      "transform": [{"filter": "datum.Sport == 'Weightlifting'"}],
+      "encoding": {"text": {"field": "Count", "type": "quantitative"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 35,
+        "thetaOffset": -19.8,
+        "xOffset": 2.5,
+        "yOffset": -5.5,
+        "fontWeight": "bold"
+      },
+      "transform": [{"filter": "datum.Sport == 'Weightlifting'"}],
+      "encoding": {"text": {"field": "Sport"}}
+    },
+    {
+      "mark": {"type": "text", "radiusOffset": 10, "yOffset": 5},
+      "transform": [{"filter": "datum.Sport == 'Aquatics'"}],
+      "encoding": {"text": {"field": "Count", "type": "quantitative"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radiusOffset": 35,
+        "fontWeight": "bold",
+        "yOffset": 13
+      },
+      "transform": [{"filter": "datum.Sport == 'Aquatics'"}],
+      "encoding": {"text": {"field": "Sport"}}
+    },
+    {
+      "mark": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/manojlah/Test/main/chnflag.png",
+        "height": 65
+      },
+      "encoding": {"x": {"value": 500}, "y": {"value": 175}}
+    }
+  ],
+  "encoding": {
+    "theta": {"field": "Count", "type": "quantitative", "stack": true},
+    "radius": {
+      "field": "Count",
+      "scale": {"type": "symlog", "zero": true, "rangeMin": 20},
+      "sort": "ascending"
+    },
+    "color": {
+      "field": "Sport",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Aquatics",
+          "Archery",
+          "Athletics",
+          "Badminton",
+          "Boxing",
+          "Canoe / Kayak",
+          "Cycling",
+          "Fencing",
+          "Gymnastics",
+          "Hockey",
+          "Judo",
+          "Rowing",
+          "Sailing",
+          "Shooting",
+          "Table Tennis",
+          "Taekwondo",
+          "Tennis",
+          "Volleyball",
+          "Weightlifting",
+          "Wrestling"
+        ],
+        "range": [
+          "#1a75ff",
+          "grey",
+          "grey",
+          "#fa027e",
+          "grey",
+          "grey",
+          "grey",
+          "grey",
+          "#660000",
+          "grey",
+          "grey",
+          "grey",
+          "grey",
+          "#ffa64d",
+          "#ab02fa",
+          "grey",
+          "grey",
+          "grey",
+          "black",
+          "grey"
+        ]
+      }
+    },
+    "tooltip": [
+      {"field": "Sport"},
+      {"field": "Count", "title": "No. of Medals"}
+    ],
+    "fillOpacity": {"condition": {"param": "select", "value": 1}, "value": 0.3}
+  },
+  "config": {}
+}
