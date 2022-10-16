@@ -1,9 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple radial chart with embedded data.",
+  "title": "China's medal distribution",
   "height": 350,
   "width": 500,
-  "background": "beige",
+  "background": null,
   "data": {
     "url": "https://raw.githubusercontent.com/manojlah/Test/main/chndat.csv"
   },
