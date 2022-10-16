@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 400,
+  "width": 800,
+  "background": "beige",
+  "data": {
+    "url": "https://raw.githubusercontent.com/manojlah/Test/main/heatmapdata.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "rect", "cursor": "pointer"},
+      "encoding": {
+        "fillOpacity": {
+          "condition": {"param": "highlight", "value": 1},
+          "value": 0.3
+        },
+        "x": {"field": "Sport", "type": "nominal"},
+        "y": {"field": "Country", "type": "nominal"},
+        "color": {
+          "field": "Count",
+          "type": "quantitative",
+          "scale": {"scheme": "reds"}
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "Sport", "type": "nominal"},
+          {"field": "Count", "type": "quantitative", "title": "No. of Medals"}
+        ]
+      },
+      "params": [
+        {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
+      ]
+    },
+    {
+      "mark": {"type": "text"},
+      "encoding": {
+        "x": {"field": "Sport", "type": "nominal"},
+        "y": {"field": "Country", "type": "nominal"},
+        "text": {"field": "Count", "type": "quantitative"},
+        "color": {
+          "condition": {"test": "datum['Count'] < 15", "value": "black"},
+          "value": "white"
+        }
+      }
+    }
+  ],
+  "config": {}
+}
