@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 675,
   "height": 375,
-  "background": "beige",
+  "background": null,
   "title": "No. of Gold Medals won by each country (2004 & 2008)",
   "projection": {"type": "equalEarth"},
   "layer": [
