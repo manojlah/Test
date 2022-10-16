@@ -3,7 +3,7 @@
   "description": "A simple radial chart with embedded data.",
   "height": 350,
   "width": 500,
-  "background": "beige",
+  "background": null,
   "data": {
     "url": "https://raw.githubusercontent.com/manojlah/Test/main/usdat.csv"
   },
