@@ -1,0 +1,331 @@
+<!doctype html>
+    <html>
+        <head>
+            <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+            <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+
+            <!-- Import pure.css -->
+            <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+            integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <title>
+                Data Viz 2 - Manoj Suresh
+            </title>
+
+            <style>
+                .explanation{
+                color: black;
+                font-weight:400;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: medium;
+                text-align: left;
+                    }
+
+                .margin{
+                padding-right: 20px;
+                padding-left: 20px;
+                }
+
+                .vis-container {
+                width: 100%;
+                align-content: right; 
+                }
+
+                .pure-g {
+                margin-bottom: 40px;
+                }
+
+                .page {
+                width: 1035px;
+                background-color: rgba(245, 245, 220, 0.689);
+                margin: auto;
+                padding: 50px;
+                padding-top: 5px;
+                --background-image: url("https://raw.githubusercontent.com/manojlah/Test/main/olymbck.png");
+                filter: blur(0px);
+                }
+
+                .l1header{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: green;
+                text-align: center;
+                font-size: x-large;
+                font-weight: bolder;
+                }
+
+                .h4{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-decoration: underline ;
+                color: #0081C8;
+
+                }
+
+                .backg{
+                    background-image: url('https://raw.githubusercontent.com/manojlah/Test/main/olymbck.png');
+                    background-blend-mode:soft-light;
+                    background-image:linear-gradient( #f48091,darkgrey,#efbf6c , #83f6ba ,#9bd4f2,black,black);
+                }
+
+                .headerstyle{
+
+                    background-color: rgba(245, 245, 220, 0.689);
+                    width: 1035px;
+                    padding: 50px;
+                    margin: auto
+                }
+
+                
+
+
+            </style>
+
+        </head>
+
+        <header class="headerstyle">
+            <h1 style = "text-align:center; height:200; width: 200;">
+                <img src="https://raw.githubusercontent.com/manojlah/Test/main/rings.png" alt="Olympic Logo" height="100" width="200"> 
+             </h1>
+            <h1 style="text-align:center; font-style: italic; text-decoration-line:underline; color:#EE334E;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 35px;" >
+                <span style="color: #0081C8">2008</span>
+                <span style="color: #FCB131">Olympics</span>
+                <span style="color: #000000">Data</span>
+                <span style="color: #00A651">Analysis</span>
+            </h1>
+        </header>
+
+      <div class = "page">
+        --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      </div>  
+        
+        <body class= backg>
+            
+            <div class="page">
+        
+            <p class="l1header" style="padding-top: 0px;">
+                2008 Olympics remains the first memory of Olympic sport for the early <br>
+                'Gen Z' population. This dashboard visualises the various aspects of<br>
+                the sport such as the countries with the most number of medals and what<br> sport they performed the best in.
+            </p>
+            <br>
+            <br>
+            <br>
+
+            <div class="pure-g", style="text-align:center">
+                <div class="pure-u-1-4">
+                    <h4 class = "h4">
+                        World map
+                    </h4>
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+                    sans-serif ;font-style: italic; font-size: x-small; color: #0081C8;">
+                        *Try filtering by continent by clicking on the legend!
+                    </p>
+                    <p class = "explanation">
+                        As seen from the map, <span style = "color: #a8040c"> China </span> and
+                        the <span style = "color: #1a75ff"> United States </span> have 
+                        the highest number of Gold medals won at the 2008 Olympics.
+                    </p>
+
+
+                    <p class = "explanation">
+                        Looking at the continents, the Gold Medals seems to be heavily concentrated in Europe. A zoomed in version of Europe
+                        is provided below as it can get difficult to tell the countries apart on the world map.
+                    </p>
+                </div>
+                <div class="pure-u-3-4">
+                  <div id="vis1" class="vis-container"></div>
+                </div>
+            </div>
+
+            <div class = "pure-g">
+                <div class="pure-u-2-3">
+                    <div id="vis3" class="vis-container"></div>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <h4 class = "h4" style="text-align: center;">
+                        Europe map
+                    </h4>
+
+                    <p class = "explanation" style="text-align: left;">
+                        <span style = "color: #f97d00;"> Russia </span>, <span style = "color: #f97d00"> United Kingdom (Great Britain) </span>
+                        and <span style = "color: #f97d00"> Germany </span> have the highest number of Gold Medals in Europe. 
+                    </p>
+
+                    <p class = "explanation" style="text-align: left;">
+                        There were a total of 24 nations which won a gold medal in Europe. This is by far the highest among the continents
+                        with Asia coming in 2nd with 14 nations winnign a Gold medal. 
+                    </p>
+
+                </div>
+
+            </div>
+            --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+            <p class="l1header">
+                The grouped bar chart below shows the distribution of medals<br>among the top 10 countries at the Olympic games.
+            </p>
+            
+            <div class="pure-g", style="text-align:center">
+        
+                <div class="pure-u-1-3">
+                    
+                    <p class = "explanation">
+                        Given information from the previous map, it is not surprising to see that 6 of the 10 positions are taken up by European nations.
+                    </p>
+                    <p class = "explanation">
+                        The <span style = "color: #1a75ff"> United States </span> seems to have a fairly even split among Gold, Silver and Bronze medals while <span style = "color: #a8040c"> China's </span> tally is dominated by
+                        Gold medals. This anomaly seems to only be prevalent in the Chinese medal distribution as the other countries have a fairly even
+                        distribution.
+                    </p>
+
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+                    sans-serif ;font-style: italic; font-size: x-small; color: #0081C8;">
+                        *There are 2 filtering options on this visualisation. Try clicking on the<br>
+                        legend and using the drop down menu below the visualisation.
+                    </p>
+                </div>
+                <div class="pure-u-2-3">
+                    <div id="vis2" class="vis-container"></div>
+                </div>
+            </div>
+
+            --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            <p class="l1header">
+                The heatmap chart shows the distribution of medals won <br>in each sport by each of the top 10 nations.
+            </p>
+            
+            <div style="align-items: center;display: block;">
+                <div align="center">
+                    <div id="vis4" class="vis-container" ></div>    
+                </div>
+            </div>
+
+            <div class="pure-g" style="text-align:center">
+
+                <div class="pure-u-1-2" s>
+                    <p class = explanation style="text-align:center;">Aquatics seems to be the sport that many countries do well in. Ausralia, <span style = "color: #a8040c"> China </span>, Russia and the <span style = "color: #1a75ff"> United States </span> have won many
+                    <br>medals in Aquatics, which includes all swimming and <br>synchronised diving events.
+                    </p>
+                </div>
+
+
+                <div class="pure-u-1-2">
+                    <p class = explanation style="text-align: center;">The <span style = "color: #1a75ff"> United States </span> and <span style = "color: #a8040c"> China </span> seem to have their medal tally concentrated in 1 or 2 events whereas the other countries seem
+                        to have a much more even spread. The <span style = "color: #1a75ff"> United States </span> won 50% <br>of its total medal tally across two events; Aquatics and Athletics. <br>36%
+                        of <span style = "color: #a8040c"> China's </span> medals were won in Aquatics and Gymnastics. 
+                    </p>
+                </div>
+
+                
+            </div>
+
+
+            --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+            <p class="l1header">
+                The radial charts below better visualise the distribution <br>
+                 of medals in the <span style = "color: #1a75ff"> United States' </span> and <span style = "color: #a8040c"> China's </span> 2008 Olympic games campaign.
+            </p>
+
+            <div class="pure-g", style="text-align:center">
+
+                <div class="pure-u-1-2">
+                    <div id="vis5" class="vis-container"></div>
+                </div>
+                <div class="pure-u-1-2">
+                    <div id="vis6" class="vis-container"></div>
+                </div>
+            </div>
+
+            <div class="pure-g", style="text-align:center">
+
+                <div class="pure-u-1-2">
+                    <p class="explanation" style="text-align: center;">
+                        The <span style = "color: #1a75ff"> United States' </span> seems to be the strongest in Aquatics and <br>Athletics
+                        where it won 33 and 23 medals respectively.
+                        <br>This makes up about 50% of its total medals won at the 2008 Olympic games. The other sports in which
+                        the <span style = "color: #1a75ff"> United States' </span> excelled are Cycling,
+                        Fencing, Shooting and Gymnastics.
+                    </p>
+                </div>
+                <div class="pure-u-1-2">
+                    <p class = "explanation" style = "text-align: center;">
+                        <span style = "color: #a8040c"> China </span> is also the strongest in Aquatics just 
+                        like the <span style = "color: #1a75ff"> United States' </span>. <br> It has equal number of medals in Gymnastics 
+                        as it did in<br>Aquatics which means it has a tie for the top spot. These 2 sports make up almost half of 
+                        its total medal tally. It also fared well in Shooting, Table Tennis, Badminton and weightlifting.
+                    </p>
+                </div>
+            </div>
+
+            --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            <div>
+
+                <p class = l1header >
+                    Conclusion
+                </p>
+
+                <p class = "explanation" style="text-align: center;">
+                    The 2 most successful countries at the 2008 Olympic Games are <br><span style = "color: #a8040c"> China </span> and
+                    the <span style = "color: #1a75ff"> United States </span>.
+                    <span style = "color: #a8040c"> China </span> has the most number of Gold Medals <br>with 51 while the United States has the most number <br>
+                    of overall medals with 111. 
+<br>
+<br>
+                    All the top 10 nations have at least 1 medal each in Aquatics while<br> the triathlon was only won
+                    by 2 countries due to it being a single event.
+<br>
+                    Europe was the most successful nation with 24 of its nations winning a gold medal. 
+                    
+                </p>
+
+            </div>
+            --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            <footer style="padding-top: 75px; text-align: center; font-style: italic; color: black; text-decoration-line:underline">
+                This visualisation was created by Manoj Suresh
+<br>
+                The GitHub repository can be accessed by clicking on this link: <a href="https://github.com/manojlah/Test" target="_blank"> GitHub </a> 
+            </footer>
+
+        </div>
+
+            <script type="text/javascript">
+                var specVis1 = "https://raw.githubusercontent.com/manojlah/Test/main/worldocean.json"
+                var specVis2 = "https://raw.githubusercontent.com/manojlah/Test/main/barchart.json"
+                var specVis3 = "https://raw.githubusercontent.com/manojlah/Test/main/europeocean.json"
+                var specVis4 = "https://raw.githubusercontent.com/manojlah/Test/main/heatmapchartt.json"
+                var specVis5 = "https://raw.githubusercontent.com/manojlah/Test/main/usradial.json"
+                var specVis6 = "https://raw.githubusercontent.com/manojlah/Test/main/chinaradial.json"
+            
+                vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
+                  // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error)
+
+                vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+                  // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error)
+
+                vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+                  // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error)
+
+                vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+                  // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error)
+
+                vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+                  // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error)
+
+                vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+                  // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error)
+            </script>
+            
+        </body>
+
+</html>
