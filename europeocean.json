@@ -3,7 +3,8 @@
   "width": 500,
   "height": 275,
   "background": null,
-  "title": "No. of Gold Medals won by European countries",
+  "title": {"text":"No. of Gold Medals won by European countries",
+  "fontSize": 15},
   "projection": {"type": "equalEarth"},
   "layer": [
     {
@@ -40,13 +41,13 @@
           "type": "quantitative",
           "title": "No. of Gold Medals",
           "scale": {"domain": [0.2, 3, 25]},
-          "legend": {"symbolFillColor": "#e6e600", "symbolOpacity": 0.75}
+          "legend": {"symbolFillColor": "#f97d00", "symbolOpacity": 0.75}
         },
         "color": {
           "field": "Continent",
           "type": "nominal",
           "legend": null,
-          "scale": {"range": ["#e6e600"]}
+          "scale": {"range": ["#f97d00"]}
         },
         "tooltip": [
           {"field": "Country", "type": "nominal"},
