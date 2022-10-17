@@ -35,7 +35,19 @@
     "x": {"field": "Country"},
     "y": {"field": "Count", "type": "quantitative", "title": "No. of Medals"},
     "xOffset": {"field": "Medal", "sort": "x"},
-    "color": {"field": "Medal", "sort": "x"},
+    "color": {"field": "Medal", "sort": "x",
+    "scale": {
+      "domain": [
+        "Gold",
+        "Silver",
+        "Bronze"
+      ],
+      "range":[
+        "#469cff",
+        "#ffc400db",
+        "#c174ff"
+      ]
+    }},
     "tooltip": [
       {"field": "Country", "type": "nominal"},
       {"field": "Medal", "type": "nominal", "title": "Medal Type"},
