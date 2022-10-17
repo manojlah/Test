@@ -1,9 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
-  "height": 200,
+  "height": 250,
   "background": null,
-  "title": "Top 10 nations at the 2008 Olympics with the highest medal tally",
+  "padding": {
+    "top": 20,
+    "bottom": 0,
+    "left": 0,
+    "right": 0
+  },
+  "title": {
+    "text": "Top 10 nations at the 2008 Olympics with the highest medal tally",
+    "fontSize": 17},
   "data": {
     "url": "https://raw.githubusercontent.com/manojlah/Test/main/barchartdat.csv"
   },
@@ -52,15 +60,6 @@
     {
       "mark": {"type": "text", "align": "center", "yOffset": -8},
       "encoding": {"text": {"aggregate": "sum", "field": "Count"}}
-    },
-    {
-      "mark": {"type": "text", "align": "center", "yOffset": 15},
-      "encoding": {
-        "text": {"field": "cn"},
-        "color": {"value": "black"},
-        "y": {"value": 220},
-        "stroke": {"value": "black"}
-      }
     }
   ],
   "config": {}
