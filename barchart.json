@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
-  "height": 250,
+  "height": 200,
   "background": null,
   "title": "Top 10 nations at the 2008 Olympics with the highest medal tally",
   "data": {
