@@ -3,7 +3,8 @@
   "width": 675,
   "height": 375,
   "background": null,
-  "title": "No. of Gold Medals won by each country (2004 & 2008)",
+  "title": {"text": "No. of Gold Medals won by each country (2004 & 2008)",
+  "fontSize": 15},
   "projection": {"type": "equalEarth"},
   "layer": [
     {
@@ -62,10 +63,10 @@
             "range": [
               "#1a75ff",
               "#00cc00",
-              "#e6e600",
+              "#ffa64d",
               "#ff6699",
               "#660000",
-              "#ffa64d"
+              "#e6e600"
             ]
           },
           "legend": {"padding": 10, "titlePadding": 8}
